@@ -1,0 +1,52 @@
+{
+    "token": "Your Bot Token", 
+    "prefix": "!",
+    "logChannelId": "Command Logs Channel ID",
+    
+    "allowedUserIds": ["User id if you want", "You can add multiple Users"],
+    "allowedRoleIds": ["Role id if you want", "You can add multiple Roles"],
+
+
+    "AllPlayersEmbed": {
+        "channelId": "Channel Id To Send All Players Embed",
+        "ServerIP": "SERVER IP JUST IP",
+        "ServerPort": "Server Port",
+        "RefreshTime": 60000,
+        "maxPlayers": 48
+    },
+
+
+    "validBankTypes": [ 
+         "cash",
+         "bank",
+         "bloodmoney",
+         "rhobank",
+         "blkbank",
+         "armbank",
+         "valbank"
+    ],
+    
+    "validWeathers": [
+        "blizzard",
+        "clouds",
+        "drizzle",
+        "fog",
+        "groundblizzard",
+        "hail",
+        "highpressure",
+        "hurricane",
+        "misty",
+        "overcast",
+        "overcastdark",
+        "rain",
+        "sandstorm",
+        "shower",
+        "sleet",
+        "snow",
+        "snowlight",
+        "sunny",
+        "thunder",
+        "thunderstorm",
+        "whiteout"
+    ]
+}
