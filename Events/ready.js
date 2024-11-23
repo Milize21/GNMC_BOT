@@ -9,7 +9,7 @@ module.exports = async (client) => {
     const updateActivity = async () => {
         try {
             // Fetch the player data from the server
-            const response = await axios.get('http://localhost:30120/players.json');
+            const response = await axios.get(`http://${config.AllPlayersEmbed.ServerIP + ':' + config.AllPlayersEmbed.ServerPort}/players.json`);
             const players = response.data;
             playerCount = players.length;
 
