@@ -65,9 +65,6 @@ module.exports = (client) => {
             message.reply('There was an error executing that command!');
         }
     });
-
-    const Player = RSGCore.Functions.GetPlayer(1);
-    console.log(Player);
 };
 
 function hasPermission(userId, member) {
