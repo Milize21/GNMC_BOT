@@ -5,6 +5,7 @@ const readyEventHandler = require('./Events/ready');
 const RSGCore = exports['rsg-core'].GetCoreObject();
 const axios = require('axios');
 const serverName = GetConvar("sv_hostname", "Set Sv Host Name in Server.CFG")
+const VORPcore = exports['vorp_core'].GetCore();
 
 // Framework detection
 let framework = null;
