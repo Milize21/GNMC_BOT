@@ -17,7 +17,7 @@ module.exports = (client, framework) => {
         }
     }
 
-    client.on('message', async (message) => {
+    client.on('messageCreate', async (message) => {
         if (message.author.bot) return;
 
         const prefix = '!';
