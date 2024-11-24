@@ -1,14 +1,13 @@
 const { sendLog } = require('../../Events/logFunction');
 const config = require('../../config.json'); // Adjust the path as needed
-
 module.exports = {
-    name: 'kill',
-    description: 'Kill a player!',
+    name: 'revive',
+    description: 'Revive a player!',
     adminOnly: true,
     execute(message, args) {
         if (!args[0]) {
             return message.reply(
-                `❓ **Usage:** \`${config.prefix}kill [id]\`\n**Example:** \`${config.prefix}kill 1\``
+                `❓ **Usage:** \`${config.prefix}revive [id]\`\n**Example:** \`${config.prefix}revive 1\``
             );
         }
 
@@ -30,17 +29,17 @@ module.exports = {
         if (Player) {
             const PlayerData = Player.PlayerData;
 
-            // Determine the prefix based on the QC_Medic configuration
+            // Use the configuration to determine the prefix
             const medicPrefix = config.QC_Medic ? 'QC-AdvancedMedic' : 'rsg-medic';
-            emitNet(`${medicPrefix}:client:KillPlayer`, playerId);
+            emitNet(`${medicPrefix}:client:playerRevive`, playerId);
 
-            embed.color = 0xff0000;
-            embed.title = '💀 Player Eliminated!';
-            embed.description = `**Player:** ${GetPlayerName(playerId)} (ID: **${playerId}**) has been successfully killed.`;
+            embed.color = 0x00ff00;
+            embed.title = '✨ Player Revived Successfully!';
+            embed.description = `**Player:** ${GetPlayerName(playerId)} (ID: **${playerId}**) has been brought back to life!`;
             embed.fields = [
                 { name: '🆔 Citizen ID', value: `\`${PlayerData.citizenid}\``, inline: true },
                 { name: '👤 Name', value: `\`${PlayerData.charinfo.firstname} ${PlayerData.charinfo.lastname}\``, inline: true },
-                { name: '🛑 Action', value: '**Killed**', inline: true },
+                { name: '🏥 Action', value: '**Revived**', inline: true },
             ];
 
             message.channel.send({ embeds: [embed] });
@@ -52,17 +51,18 @@ module.exports = {
 
             sendLog(
                 message.client,
-                '🚨 Player Killed',
-                `Player **${GetPlayerName(playerId)}** (ID: ${playerId}) was killed by <@${message.author.id}>.`,
+                '🚨 Player Revived',
+                `Player **${GetPlayerName(playerId)}** (ID: ${playerId}) was revived successfully by <@${message.author.id}>..`,
                 0x00ff00,
                 fields
             );
+
         } else {
             embed.color = 0xff0000;
             embed.title = '❌ Error: Player Not Found!';
             embed.description = `The player with ID **${playerId}** is either offline or does not exist.`;
             embed.fields = [
-                { name: '🛑 Action', value: 'Kill attempt **failed**!', inline: true },
+                { name: '🛑 Action', value: 'Revive attempt **failed**!', inline: true },
             ];
 
             message.channel.send({ embeds: [embed] });
@@ -70,7 +70,7 @@ module.exports = {
             sendLog(
                 message.client,
                 '❌ Player Not Found',
-                `Attempted to kill player **${playerId}**, but the player was not found or is offline.`,
+                `Attempted to revive player **${playerId}**, but the player was not found or is offline.`,
                 0xff0000,
                 embed.fields
             );
