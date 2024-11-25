@@ -51,7 +51,7 @@ More commands will be added with updates hope you guys enjoy
 - Open config.json and replace token with your own bot token which you can find by opening https://discord.com/developers/applications in your browser, click on New Application > Type a name > Click Create > On the left side, you'll see "Bot" click on it > Click on Add Bot > Under token, click copy.  
 - Make sure to use the bot commands in a different channel than the channel with the player's list embed.
 - Make sure the bot has the permissions enabled like in the picture.
-[![preview]([https://i.ibb.co/kHdss4g/image.png](https://i.ibb.co/P1R3V2B/Screen-Recording2024-11-25090925-ezgif-com-video-to-gif-converter.gif))]([https://i.ibb.co/kHdss4g/image.png](https://i.ibb.co/P1R3V2B/Screen-Recording2024-11-25090925-ezgif-com-video-to-gif-converter.gif))
+[![preview](https://i.ibb.co/P1R3V2B/Screen-Recording2024-11-25090925-ezgif-com-video-to-gif-converter.gif)](https://i.ibb.co/P1R3V2B/Screen-Recording2024-11-25090925-ezgif-com-video-to-gif-converter.gif)
 - Setup More Config According to you
 
 Thank you, [LeonmDK3](https://github.com/LeonmDK3), for making this bot compatible with VORP.
