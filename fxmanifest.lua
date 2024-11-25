@@ -5,7 +5,7 @@ lua54 'yes'
 
 author 'dfa-discordbot | DFA Development'
 description 'Integrates RedM server with Dfa-DiscordBot for admin commands.'
-version '1.3'
+version '1.5'
 
 client_scripts {
     'client.lua',
