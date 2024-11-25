@@ -2,13 +2,11 @@ const { Client, Intents } = require('discord.js');
 const config = require('./config.json');
 const messageHandler = require('./Handler/messageHandler');
 const readyEventHandler = require('./Events/ready');
-const RSGCore = exports['rsg-core'].GetCoreObject();
 const axios = require('axios');
 const serverName = GetConvar("sv_hostname", "Set Sv Host Name in Server.CFG")
-const VORPcore = exports['vorp_core'].GetCore();
 
-// Framework detection
-let framework = null;
+let framework;
+
 try {
     global.exports['rsg-core'].GetCoreObject();
     framework = 'rsg-core';
@@ -20,8 +18,20 @@ try {
         console.log("Detected VORP-Core framework.");
     } catch {
         console.error("No supported framework detected!");
+        framework = null;
     }
 }
+
+let VORPcore = null;
+let RSGCore = null;
+if (framework === 'rsg-core') {
+    RSGCore = exports['rsg-core'].GetCoreObject();
+    console.log("RSG-Core initialized.");
+} else if (framework === 'vorp-core') {
+    VORPcore = exports['vorp_core'].GetCore();
+    console.log("VORP-Core initialized.");
+}
+
 
 const client = new Client({
     intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS]
