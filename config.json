@@ -17,10 +17,6 @@
     },
 
     
-
-   "QC_Medic": true,
-
-
     "validBankTypes": [ 
          "cash",
          "bank",
