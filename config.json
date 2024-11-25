@@ -15,7 +15,11 @@
         "RefreshTime": 60000,
         "maxPlayers": 48
     },
+
     
+
+   "QC_Medic": true,
+
 
     "validBankTypes": [ 
          "cash",

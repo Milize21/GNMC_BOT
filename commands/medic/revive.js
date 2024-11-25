@@ -1,5 +1,5 @@
 const { sendLog } = require('../../Events/logFunction');
-
+const config = require('../../config.json'); // Adjust the path as needed
 module.exports = {
     name: 'revive',
     description: 'Revive a player!',

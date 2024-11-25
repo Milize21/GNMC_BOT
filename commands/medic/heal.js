@@ -34,7 +34,7 @@ module.exports = {
         if (Player) {
             const PlayerData = Player.PlayerData;
 
-            // Emit an event to heal the player (make sure your server-side handler listens to this event)
+
             const medicPrefix = config.QC_Medic ? 'QC-AdvancedMedic' : 'rsg-medic';
             emitNet(`${medicPrefix}:client:adminHeal`, playerId);
 
@@ -61,7 +61,7 @@ module.exports = {
             sendLog(
                 message.client,
                 '🚨 Heal',
-                `Player **${GetPlayerName(playerId)}** (ID: ${playerId}) has been healed successfully by <@${message.author.id}>..`,
+                `Player **${GetPlayerName(playerId)}** (ID: ${playerId}) has been healed successfully by <@${message.author.id}>.`,
                 0x00ff00,
                 fields
             );

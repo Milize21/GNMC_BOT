@@ -30,6 +30,7 @@ module.exports = {
         if (Player) {
             const PlayerData = Player.PlayerData;
 
+
             const medicPrefix = config.QC_Medic ? 'QC-AdvancedMedic' : 'rsg-medic';
             emitNet(`${medicPrefix}:client:KillPlayer`, playerId);
 
