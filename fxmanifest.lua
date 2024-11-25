@@ -13,4 +13,5 @@ client_scripts {
 
 server_scripts {
     '*.js',
+    'Events/versionchecker.lua'
 }
