@@ -30,7 +30,8 @@ module.exports = {
         if (Player) {
             const PlayerData = Player.PlayerData;
 
-            emitNet('rsg-medic:client:KillPlayer', playerId);
+            const medicPrefix = config.QC_Medic ? 'QC-AdvancedMedic' : 'rsg-medic';
+            emitNet(`${medicPrefix}:client:KillPlayer`, playerId);
 
             embed.color = 0xff0000;
             embed.title = '💀 Player Eliminated!';

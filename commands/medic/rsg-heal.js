@@ -35,7 +35,8 @@ module.exports = {
             const PlayerData = Player.PlayerData;
 
             // Emit an event to heal the player (make sure your server-side handler listens to this event)
-            emitNet('rsg-medic:client:adminHeal', playerId);
+            const medicPrefix = config.QC_Medic ? 'QC-AdvancedMedic' : 'rsg-medic';
+            emitNet(`${medicPrefix}:client:adminHeal`, playerId);
 
             // Set up success embed
             embed.color = 0x00ff00;

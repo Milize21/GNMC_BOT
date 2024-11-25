@@ -14,10 +14,3 @@ client_scripts {
 server_scripts {
     '*.js',
 }
-
-dependencies {
-    'rsg-core',
-    'rsg-medic',
-    'rsg-adminmenu',
-    'weathersync',
-}

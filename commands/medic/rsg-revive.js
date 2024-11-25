@@ -29,7 +29,8 @@ module.exports = {
         if (Player) {
             const PlayerData = Player.PlayerData;
 
-            emitNet('rsg-medic:client:playerRevive', playerId);
+            const medicPrefix = config.QC_Medic ? 'QC-AdvancedMedic' : 'rsg-medic';
+            emitNet(`${medicPrefix}:client:playerRevive`, playerId);
 
             embed.color = 0x00ff00;
             embed.title = '✨ Player Revived Successfully!';
