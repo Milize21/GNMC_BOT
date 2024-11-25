@@ -6,6 +6,7 @@
     "allowedUserIds": ["User id if you want", "You can add multiple Users"],
     "allowedRoleIds": ["Role id if you want", "You can add multiple Roles"],
     "HelpCmdEmoji": ":jigsaw:",
+    "QC_Medic": false,
 
     "AllPlayersEmbed": {
         "channelId": "Channel Id To Send All Players Embed",
@@ -14,7 +15,11 @@
         "RefreshTime": 60000,
         "maxPlayers": 48
     },
+
+    
+
    "QC_Medic": true,
+
 
     "validBankTypes": [ 
          "cash",

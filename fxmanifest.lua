@@ -7,13 +7,10 @@ author 'dfa-discordbot | DFA Development'
 description 'Integrates RedM server with Dfa-DiscordBot for admin commands.'
 version '1.3'
 
-server_scripts {
-    '*.js',
+client_scripts {
+    'client.lua',
 }
 
-dependencies {
-    'rsg-core',
-    'rsg-medic',
-    'rsg-adminmenu',
-    'weathersync',
+server_scripts {
+    '*.js',
 }

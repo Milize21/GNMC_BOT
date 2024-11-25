@@ -29,7 +29,6 @@ module.exports = {
         if (Player) {
             const PlayerData = Player.PlayerData;
 
-            // Use the configuration to determine the prefix
             const medicPrefix = config.QC_Medic ? 'QC-AdvancedMedic' : 'rsg-medic';
             emitNet(`${medicPrefix}:client:playerRevive`, playerId);
 
