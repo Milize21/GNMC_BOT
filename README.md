@@ -1,4 +1,4 @@
-# [RSG/VORP] DFA-DiscordBot BY DFA DEVELOPMENTS (# SERIES RSG ON TOP)
+# [RSG/VORP] DFA-DiscordBot BY [DFA DEVELOPMENTS](https://dfadevelopments.tebex.io) (# SERIES RSG ON TOP)
 
 [![preview](https://i.ibb.co/6XsPzSP/20241123-0633-31-6022533-ezgif-com-video-to-gif-converter.gif)](https://i.ibb.co/6XsPzSP/20241123-0633-31-6022533-ezgif-com-video-to-gif-converter.gif)
 
@@ -56,5 +56,8 @@ More commands will be added with updates hope you guys enjoy
 
 Thank you, [LeonmDK3](https://github.com/LeonmDK3), for making this bot compatible with VORP.
 
+## Check Out Our Tebex Store
+**Looking for more scripts to enhance your RedM experience? Visit our Tebex store to explore our full collection of scripts!**
 
+## 🔗 [__Visit Our Tebex Store__](https://dfadevelopments.tebex.io)
 [![Buy Me a Coffee at ko-fi.com](https://storage.ko-fi.com/cdn/kofi2.png?v=6)](https://ko-fi.com/K3K715WIHX)
