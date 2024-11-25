@@ -1,4 +1,4 @@
-# [RSG/VORP] DFA-DiscordBot BY __DFA DEVELOPMENTS__ (# SERIES RSG ON TOP)
+# [RSG/VORP] DFA-DiscordBot BY DFA DEVELOPMENTS (# SERIES RSG ON TOP)
 
 [![preview](https://i.ibb.co/6XsPzSP/20241123-0633-31-6022533-ezgif-com-video-to-gif-converter.gif)](https://i.ibb.co/6XsPzSP/20241123-0633-31-6022533-ezgif-com-video-to-gif-converter.gif)
 
