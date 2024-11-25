@@ -1,9 +1,9 @@
-# DFA-DiscordBot BY [DFA DEVELOPMENTS](https://dfadevelopments.tebex.io) (# SERIES RSG ON TOP)
+# [RSG/VORP] DFA-DiscordBot BY [DFA DEVELOPMENTS](https://dfadevelopments.tebex.io) (# SERIES RSG ON TOP)
 
 [![preview](https://i.ibb.co/6XsPzSP/20241123-0633-31-6022533-ezgif-com-video-to-gif-converter.gif)](https://i.ibb.co/6XsPzSP/20241123-0633-31-6022533-ezgif-com-video-to-gif-converter.gif)
 
 ### Dependencies
-- [**RSG-CORE**](https://github.com/Rexshack-RedM/rsg-core)
+- [**RSG-CORE**](https://github.com/Rexshack-RedM/rsg-core) / [**VORP-CORE**](https://github.com/VORPCORE/vorp_core-lua)
 - [**RSG-MEDIC**](https://github.com/Rexshack-RedM/rsg-medic)
 - [**RSG-ADMINMENU**](https://github.com/Rexshack-RedM/rsg-adminmenu)
 - [**WEATHERSYNC**](https://github.com/Rexshack-RedM/weathersync)
@@ -45,11 +45,16 @@ More commands will be added with updates hope you guys enjoy
 
 
 ## __**INSTALLATION**__:
+- Download or clone the repository
+- Put it in your resources folder
+- Add in your server.cfg `ensure dfa-discordbot`, make sure this is below `ensure [framework]`
+- Open config.json and replace token with your own bot token which you can find by opening https://discord.com/developers/applications in your browser, click on New Application > Type a name > Click Create > On the left side, you'll see "Bot" click on it > Click on Add Bot > Under token, click copy.  
+- Make sure to use the bot commands in a different channel than the channel with the player's list embed.
+- Make sure the bot has the permissions enabled like in the picture.
+[![preview]([https://i.ibb.co/kHdss4g/image.png](https://i.ibb.co/P1R3V2B/Screen-Recording2024-11-25090925-ezgif-com-video-to-gif-converter.gif))]([https://i.ibb.co/kHdss4g/image.png](https://i.ibb.co/P1R3V2B/Screen-Recording2024-11-25090925-ezgif-com-video-to-gif-converter.gif))
+- Setup More Config According to you
 
-Add in your server.cfg `ensure dfa-discordbot`, make sure this is below `ensure [framework]`
-Make sure you read the config file for setup, and only when you are done you can restart the server.
-
-
+Thank you, [LeonmDK3](https://github.com/LeonmDK3), for making this bot compatible with VORP.
 
 ## Check Out Our Tebex Store
 **Looking for more scripts to enhance your RedM experience? Visit our Tebex store to explore our full collection of scripts!**
