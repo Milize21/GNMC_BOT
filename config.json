@@ -16,6 +16,17 @@
         "maxPlayers": 48
     },
 
+    "Whitelist": {
+        "Whitelist": true,
+        "AutoApproval": false,
+        "DiscordLink": "https://discord.gg/yourserverlink",
+        "WhitelistChannel": "1282908190434132068",
+        "SupportRole": "Role ID! Who can use accept/reject buttons(only if AutoApproval is true)",
+        "WhitelistRoleID": "Whitelist Role ID",
+        "WhitelistMessage": "❌ You are not whitelisted. Please contact staff. Discord: https://discord.gg/yourserverlink",
+        "BlacklistRoleID": "Blacklist Role ID",
+        "BlacklistMessage": "❌ You are blacklisted. Please contact staff. Discord: https://discord.gg/yourserverlink"
+    },
     
     "validBankTypes": [ 
          "cash",

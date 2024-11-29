@@ -4,6 +4,7 @@ const messageHandler = require('./Handler/messageHandler');
 const readyEventHandler = require('./Events/ready');
 const axios = require('axios');
 const serverName = GetConvar("sv_hostname", "Set Sv Host Name in Server.CFG")
+const WhitelistCheck = require('./Events/whitelistChecker.js');
 
 let framework;
 
@@ -44,6 +45,7 @@ process.on('unhandledRejection', (reason, promise) => {
 client.once('ready', async () => {
     try {
         await readyEventHandler(client);
+        await WhitelistCheck(client);
         messageHandler(client, framework);
         await updatePlayerList();
         setInterval(updatePlayerList, config.AllPlayersEmbed.RefreshTime);
