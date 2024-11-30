@@ -39,6 +39,8 @@
 
 - **Command Logs**: Keeps logs of all commands executed for tracking and auditing purposes.
 
+- **Discord Role Whitelist**: Ensures only verified Discord users with appropriate roles can join the server, including features like whitelist requests, role-based approvals, and rejection notifications, all managed directly via Discord interactions.
+
 With Dfa-DiscordBot, managing your server has never been easier. Configure, control, and customize your server directly from Discord with a comprehensive set of commands and features designed for seamless integration and efficient administration.
 
 More commands will be added with updates hope you guys enjoy
