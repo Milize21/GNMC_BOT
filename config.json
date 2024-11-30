@@ -2,7 +2,8 @@
     "token": "Your Bot Token", 
     "prefix": "!",
     "logChannelId": "Command Logs Channel ID",
-    
+    "discordServerID": "967639696459055174",
+
     "allowedUserIds": ["User id if you want", "You can add multiple Users"],
     "allowedRoleIds": ["Role id if you want", "You can add multiple Roles"],
     "HelpCmdEmoji": ":jigsaw:",
