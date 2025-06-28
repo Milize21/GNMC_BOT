@@ -1,0 +1,89 @@
+{
+  "categories": {
+    "general": {
+      "name": "general",
+      "displayName": "General Items",
+      "description": "General inventory items",
+      "createdAt": "2025-06-26T12:00:00.000Z",
+      "createdBy": "system"
+    },
+    "electronics": {
+      "name": "electronics",
+      "displayName": "Electronics",
+      "description": "Electronic devices and accessories",
+      "createdAt": "2025-06-28T12:00:00.000Z",
+      "createdBy": "system"
+    },
+    "office": {
+      "name": "office",
+      "displayName": "Office Supplies",
+      "description": "Office stationery and supplies",
+      "createdAt": "2025-06-28T12:00:00.000Z",
+      "createdBy": "system"
+    },
+    "test1": {
+      "name": "test1",
+      "displayName": "Test1",
+      "description": "test only",
+      "createdAt": "2025-06-28T17:27:15.470Z",
+      "createdBy": "978963219404193822"
+    }
+  },
+  "items": {
+    "example_item": {
+      "name": "example_item",
+      "displayName": "Example Item",
+      "category": "general",
+      "description": "This is an example item. You can delete it.",
+      "quantity": 10,
+      "createdAt": "2025-06-26T12:00:00.000Z",
+      "createdBy": "system",
+      "lastModified": "2025-06-26T12:00:00.000Z",
+      "lastModifiedBy": "system"
+    },
+    "laptop": {
+      "name": "laptop",
+      "displayName": "Laptop",
+      "category": "electronics",
+      "description": "Company laptop computer",
+      "quantity": 10,
+      "createdAt": "2025-06-28T12:00:00.000Z",
+      "createdBy": "system",
+      "lastModified": "2025-06-28T12:00:00.000Z",
+      "lastModifiedBy": "system"
+    },
+    "monitor": {
+      "name": "monitor",
+      "displayName": "Monitor",
+      "category": "electronics",
+      "description": "24-inch computer monitor",
+      "quantity": 15,
+      "createdAt": "2025-06-28T12:00:00.000Z",
+      "createdBy": "system",
+      "lastModified": "2025-06-28T12:00:00.000Z",
+      "lastModifiedBy": "system"
+    },
+    "notepad": {
+      "name": "notepad",
+      "displayName": "Notepad",
+      "category": "office",
+      "description": "A5 lined notepads",
+      "quantity": 50,
+      "createdAt": "2025-06-28T12:00:00.000Z",
+      "createdBy": "system",
+      "lastModified": "2025-06-28T12:00:00.000Z",
+      "lastModifiedBy": "system"
+    },
+    "dawwdaw": {
+      "name": "dawwdaw",
+      "displayName": "dawwdaw",
+      "category": "test1",
+      "description": "",
+      "quantity": 10,
+      "createdAt": "2025-06-28T17:27:50.736Z",
+      "createdBy": "978963219404193822",
+      "lastModified": "2025-06-28T17:28:24.292Z",
+      "lastModifiedBy": "978963219404193822"
+    }
+  }
+}

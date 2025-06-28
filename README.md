@@ -1,65 +1,114 @@
-# [RSG/VORP] DFA-DiscordBot BY [DFA DEVELOPMENTS](https://dfadevelopments.tebex.io) (# SERIES RSG ON TOP)
+# Discord Inventory Management Bot
 
-[![preview](https://i.ibb.co/6XsPzSP/20241123-0633-31-6022533-ezgif-com-video-to-gif-converter.gif)](https://i.ibb.co/6XsPzSP/20241123-0633-31-6022533-ezgif-com-video-to-gif-converter.gif)
+A Discord bot for managing inventory with admin controls and user quantity management.
 
-### Dependencies
-- [**RSG-CORE**](https://github.com/Rexshack-RedM/rsg-core) / [**VORP-CORE**](https://github.com/VORPCORE/vorp_core-lua)
-- [**RSG-MEDIC**](https://github.com/Rexshack-RedM/rsg-medic)
-- [**RSG-ADMINMENU**](https://github.com/Rexshack-RedM/rsg-adminmenu)
-- [**WEATHERSYNC**](https://github.com/Rexshack-RedM/weathersync)
+## Features
 
+### Admin Features (Administrator permission required)
+- 🏷️ **Category Management**: Add, remove, and edit categories
+- 📦 **Item Management**: Add, remove, and edit items
+- 🔧 **Full Control**: Complete inventory management capabilities
 
-## **__Total Commands__**
+### User Features (All members)
+- 📊 **View Inventory**: Browse all categories and items
+- ➕ **Add Quantity**: Increase item quantities
+- ➖ **Remove Quantity**: Decrease item quantities
+- 🔍 **Search Items**: Find items across categories
 
-### Setup your bot and Start Using it by Typing`!help` 
-- **giveitem** - Grants an item to a player.
-- **givemoney** - Adds money to a player's account.
-- **playerinfo** - Retrieves information about a player.
-- **inventory** - Shows a player's inventory.
-- **clearinventory** - Empties a player's inventory.
-- **heal** - Heals a player to full health.
-- **kill** - Eliminates a player.
-- **revive** - Revives a player.
-- **checkresource** - Checks the status of a resource.
-- **resources** - Lists all resources on the server.
-- **restartresource** - Restarts a specified resource.
-- **startresource** - Starts a specified resource.
-- **stopresource** - Stops a specified resource.
-- **setjob** - Assigns a job to a player.
-- **setmoney** - Sets the amount of money a player has.
-- **settime** - Adjusts the server time.
-- **setweather** - Changes the server weather.
-- **kick** - kick players from server.
+## Setup Instructions
 
-## __**Features**__:
+### 1. Discord Bot Setup
+1. Go to [Discord Developer Portal](https://discord.com/developers/applications)
+2. Create a new application or use existing one
+3. Go to "Bot" section and create a bot
+4. Copy the bot token
+5. Enable necessary bot permissions:
+   - Send Messages
+   - Use Slash Commands
+   - Embed Links
+   - Read Message History
 
-- **Auto-Updating Player Embeds**: Player information embeds are automatically updated at intervals set in the configuration.
+### 2. Configuration
+Edit `config.json` with your settings:
 
-- **Role and User Permissions**: Assign permissions based on Discord roles or specific user IDs.
+```json
+{
+    "token": "YOUR_BOT_TOKEN_HERE",
+    "applicationId": "1387804137424424980",
+    "publicKey": "0a602bad81e16992de6ef471a5a114257e65e153b019c06089c47573bcfaaf4d",
+    "deepseekApiKey": "sk-85d2f13a9fbe4e059738874148b09245",
+    "guildId": "YOUR_GUILD_ID_HERE",
+    "adminRoles": ["ADMIN_ROLE_ID_HERE"],
+    "inventoryChannelId": "INVENTORY_CHANNEL_ID_HERE",
+    "logChannelId": "LOG_CHANNEL_ID_HERE"
+}
+```
 
-- **Command Logs**: Keeps logs of all commands executed for tracking and auditing purposes.
+**Required Settings:**
+- `token`: Your Discord bot token
+- `guildId`: Your Discord server ID
+- `adminRoles`: Array of role IDs that can use admin commands
+- `logChannelId`: Channel ID for logging actions (optional)
 
-- **Discord Role Whitelist**: Ensures only verified Discord users with appropriate roles can join the server, including features like whitelist requests, role-based approvals, and rejection notifications, all managed directly via Discord interactions.
+### 3. Installation
+```bash
+npm install
+```
 
-With Dfa-DiscordBot, managing your server has never been easier. Configure, control, and customize your server directly from Discord with a comprehensive set of commands and features designed for seamless integration and efficient administration.
+### 4. Run the Bot
+```bash
+node index.js
+```
 
-More commands will be added with updates hope you guys enjoy
+## Commands
 
+### Admin Commands (`/inventory-admin`)
+- `/inventory-admin add-category` - Create a new category
+- `/inventory-admin remove-category` - Remove a category
+- `/inventory-admin add-item` - Add a new item to a category
+- `/inventory-admin remove-item` - Remove an item
+- `/inventory-admin edit-item` - Edit item details
 
-## __**INSTALLATION**__:
-- Download or clone the repository
-- Put it in your resources folder
-- Add in your server.cfg `ensure dfa-discordbot`, make sure this is below `ensure [framework]`
-- Open config.json and replace token with your own bot token which you can find by opening https://discord.com/developers/applications in your browser, click on New Application > Type a name > Click Create > On the left side, you'll see "Bot" click on it > Click on Add Bot > Under token, click copy.  
-- Make sure to use the bot commands in a different channel than the channel with the player's list embed.
-- Make sure the bot has the permissions enabled like in the picture.
-[![preview](https://i.ibb.co/P1R3V2B/Screen-Recording2024-11-25090925-ezgif-com-video-to-gif-converter.gif)](https://i.ibb.co/P1R3V2B/Screen-Recording2024-11-25090925-ezgif-com-video-to-gif-converter.gif)
-- Setup More Config According to you
+### User Commands (`/inventory`)
+- `/inventory view` - Browse inventory by category
+- `/inventory add-quantity` - Add quantity to an item
+- `/inventory remove-quantity` - Remove quantity from an item
 
-Thank you, [LeonmDK3](https://github.com/LeonmDK3), for making this bot compatible with VORP.
+## Data Storage
+- Inventory data is stored in `./data/inventory.json`
+- Data is automatically saved after each change
+- Backup your data folder regularly
 
-## Check Out Our Tebex Store
-**Looking for more scripts to enhance your RedM experience? Visit our Tebex store to explore our full collection of scripts!**
+## Permissions
+- **Administrators**: Full access to all commands
+- **Admin Roles**: Users with roles specified in `config.json` get admin access
+- **Regular Users**: Can only modify quantities, cannot manage items/categories
 
-## 🔗 [__Visit Our Tebex Store__](https://dfadevelopments.tebex.io)
-[![Buy Me a Coffee at ko-fi.com](https://storage.ko-fi.com/cdn/kofi2.png?v=6)](https://ko-fi.com/K3K715WIHX)
+## Logging
+All actions are logged to the specified log channel with:
+- User information
+- Action performed
+- Timestamp
+- Changes made
+
+## File Structure
+```
+GNMC_BOT/
+├── index.js              # Main bot file
+├── config.json           # Configuration
+├── package.json          # Dependencies
+├── data/
+│   └── inventory.json    # Inventory data
+└── README.md            # This file
+```
+
+## Support
+If you encounter any issues, check:
+1. Bot has proper permissions in your server
+2. All IDs in config.json are correct
+3. Bot is online and connected
+4. Console for any error messages
+
+## Version
+Current Version: 1.0.0
+Discord.js Version: 14.21.0
